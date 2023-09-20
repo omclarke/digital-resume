@@ -16,9 +16,9 @@ PAGE_TITLE = "Digital CV | Olijoh M. Clarke"
 PAGE_ICON = ":wave:"
 NAME = "Olijoh M.Clarke"
 DESCRIPTION = """
-Data Analyst with pharmacy and military experience. Assisting companies by supporting data-driven decision-making and insights.
+Data Analyst and Army Veteran with specialty in Dashboarding and SQL. Assisting clients with data driven decisions and insights.
 """
-EMAIL = "olijoh.clarke@email.com"
+EMAIL = "olijoh.clarke@gmail.com"
 SOCIAL_MEDIA = {
     "LinkedIn": "https://linkedin.com/in/omclarke",
     "GitHub": "https://github.com/omclarke",
@@ -66,6 +66,13 @@ cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
 
+# --- Projects & Accomplishments ---
+st.write('\n')
+st.subheader("Projects & Accomplishments")
+st.write("---")
+for project, link in PROJECTS.items():
+    st.write(f"[{project}]({link})")
+
 
 # --- EXPERIENCE & QUALIFICATIONS ---
 st.write('\n')
@@ -85,9 +92,9 @@ st.write('\n')
 st.subheader("Hard Skills")
 st.write(
     """
-- 👩‍💻 Programming: Python (Pandas, NumPY, Streamlit), SQL, VBA, R Programming 
-- 📊 Data Visulization: MS Excel, PowerBI, Tableau, Plotly
-- 📚 Modeling: Statistical analysis, A/B testing, t-tests, data visualization, data cleaning, discovery, exploration, and modeling.
+- 👩‍💻 Programming: Python (Pandas, NumPy, Streamlit), SQL, R Programming 
+- 📊 Data Visulization: Tableau, Excel, PowerBI
+- 📚 Modeling: Statistical analysis, A/B testing, t-tests, data cleaning, exploration, and modeling.
 - 🗄️ Databases: Postgres, MySQL, SQLite
 """
 )
@@ -171,12 +178,7 @@ st.write(
 """
 )
 
-# --- Projects & Accomplishments ---
-st.write('\n')
-st.subheader("Projects & Accomplishments")
-st.write("---")
-for project, link in PROJECTS.items():
-    st.write(f"[{project}]({link})")
+
 
 # --- EDUCATION ---
 st.write('\n')
