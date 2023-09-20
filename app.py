@@ -73,8 +73,8 @@ st.subheader("Experience & Qualifications")
 st.write(
     """
 - ✔️ Experience extracting actionable insights from data, and dashboarding.
-- ✔️ Instructing, Preseting and Public Speaking, 
-- ✔️ Supervisory, and Operations Experience
+- ✔️ Instructing, Presenting and Public Speaking. 
+- ✔️ Secret Security Clearance and experience handling sensitve information and data.
 - ✔️ Excellent team-player and displaying strong sense of initiative on tasks.
 """
 )
